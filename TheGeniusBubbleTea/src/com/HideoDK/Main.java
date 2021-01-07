@@ -11,7 +11,7 @@ public class Main {
         MenuSelector();
     }
     private static void DisplayWelcome(){
-        System.out.println("==================================================================\n" +
+        System.out.print("==================================================================\n" +
                 "|                                                                 |\n" +
                 "|                                                                 |\n" +
                 "|                 Welcome to The Genius Bubble Tea                |\n" +
