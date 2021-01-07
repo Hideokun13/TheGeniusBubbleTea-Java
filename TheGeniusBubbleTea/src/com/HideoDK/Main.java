@@ -3,9 +3,24 @@ package com.HideoDK;
 import java.util.Scanner;
 
 public class Main {
-
+    
+    private static String menu, menu1 = "", menu2 = "", menu3 = "", menu4 = "", menu5 = "";
+    private static String menuInput1 = "", menuInput2 = "", menuInput3 = "", menuInput4 = "", menuInput5 = "";
+    private static String[] M_Option = new String[] { "\nInvalid Menu, Please Try Again", "Please press Enter to continue...", "Your Choice is: " };
+    private static String[] M_FavoredTea = new String[] { "Green Tea", "Jasmine Green Tea", "Jasmine Honey Green Tea", "Jasmine Honey Lemon Green Tea", "Apple Green Tea", "Melon Green Tea",
+            "Lychee Green Tea", "Matcha Green Tea", "Black Tea", "Honey Green Tea" };
+    private static String[] M_MilkTea = new String[] { "Milk Tea", "Green Tea", "Thai Tea", "Caramel Milk Tea", "Green Tea Macchiato", "Matcha Macchiato" };
+    private static String[] M_Latte = { "Black Tea Latte", "Green Tea Latte", "Matcha Latte", "Chocolate Milk" };
+    private static String[] M_FruitSoda = new String[] { "Strawberry Soda", "Kiwi Soda", "Apple Soda", "Blueberry Soda", "Plum Soda", "Melon Soda", "Lychee Soda", "Passion Fruit Soda",
+            "Mixed Fruit Soda", "Mango Soda" };
+    private static String[] M_Yogurt = new String[] { "Yogurt Green Tea", "Passion Fruit Yogurt Green Tea", "Apple Yogurt Green Tea", "Strawberry Yogurt Green Tea", "Blueberry Yogurt Green Tea",
+            "Plum Yogurt Green Tea" };
+    private static String[] M_Topping = new String[] { "Bubble", "Glass Jelly", "Golden Bubble", "Pudding Glass Jelly", "Jelly Fruit", "Aloe Vera", "Egg Pudding", "Chocolate Pudding",
+            "Red Bean", "Brown Sugar"};
+    private static String[] CupsSize = new String[] { "Size S", "Size M", "Size L" };
+    private static String[] Sweetness = new String[] { "More Sugar", "Full Sugar", "Less Sugar", "Half Sugar", "Quarter Sugar", "No Sugar" };
     static Scanner sc = new Scanner(System.in);
-    static String[] M_Option = new String[] { "\nInvalid Menu, Please Try Again", "Please press Enter to continue...", "Your Choice is: " };
+    
     public static void main(String[] args) {
         DisplayWelcome();
         MenuSelector();
