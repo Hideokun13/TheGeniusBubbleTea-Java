@@ -34,88 +34,87 @@ public class Main {
                 "|                                                                 |\n" +
                 "==================================================================\n");
     }
-    private static void MenuSelector(){
-        System.out.println("Please Select the menu\n" +
+    private static void MenuSelector() {
+        System.out.print("Please Select the menu\n" +
                 "1 : Favored Tea\n" +
                 "2 : Milk Tea\n" +
                 "3 : Latte\n" +
                 "4 : Fruit Soda\n" +
                 "5 : Yogurt\n" +
                 M_Option[2]);
-
-        /*switch (sc.nextInt())
+        switch (Integer.parseInt(GetInput()))
         {
             case 1:
             {
-                Menu = "Favored Tea";
+                menu = "Favored Tea";
                 {
-                    Console.WriteLine("\n" + M_Option[2] + Menu);
-                    Console.Write(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
-                    Console.ReadKey();
-                    Console.Clear();
+                    System.out.println("\n" + M_Option[2] + menu);
+                    System.out.print(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
+                    sc.next();
+                    System.console().flush();
                 }
-                MenuInput1 = FavoredTea(Menu1); // ส่ง Menu ไป Method FavoredTea และกลับรับค่ามาเก็บที่ MenuInput 1
+                /*menuInput1 = FavoredTea(menu1); // ส่ง Menu ไป Method FavoredTea และกลับรับค่ามาเก็บที่ MenuInput 1*/
                 break;
             }
             case 2:
             {
-                Menu = "Milk Tea";
+                menu = "Milk Tea";
                 {
-                    Console.WriteLine("\n" + M_Option[2] + Menu);
-                    Console.Write(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
-                    Console.ReadKey();
-                    Console.Clear();
+                    System.out.println("\n" + M_Option[2] + menu);
+                    System.out.print(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
+                    sc.next();
+                    System.console().flush();
                 }
-                MenuInput2 = MilkTea(Menu2); // ส่ง Menu ไป Method MilkTea และกลับรับค่ามาเก็บที่ MenuInput 2
+                /*menuInput2 = MilkTea(menu2); // ส่ง Menu ไป Method MilkTea และกลับรับค่ามาเก็บที่ MenuInput 2*/
                 break;
             }
             case 3:
             {
-                Menu = "Latte";
+                menu = "Latte";
                 {
-                    Console.WriteLine("\n" + M_Option[2] + Menu);
-                    Console.Write(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
-                    Console.ReadKey();
-                    Console.Clear();
+                    System.out.println("\n" + M_Option[2] + menu);
+                    System.out.print(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
+                    sc.next();
+                    System.console().flush();
                 }
-                MenuInput3 = Latte(Menu3); // ส่ง Menu ไป Method Latte และกลับรับค่ามาเก็บที่ MenuInput 3
+                /*menuInput3 = Latte(menu3); // ส่ง Menu ไป Method Latte และกลับรับค่ามาเก็บที่ MenuInput 3*/
                 break;
             }
             case 4:
             {
-                Menu = "Fruit Soda";
+                menu = "Fruit Soda";
                 {
-                    Console.WriteLine("\n" + M_Option[2] + Menu);
-                    Console.Write(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
-                    Console.ReadKey();
-                    Console.Clear();
+                    System.out.println("\n" + M_Option[2] + menu);
+                    System.out.print(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
+                    sc.next();
+                    System.console().flush();
                 }
-                MenuInput4 = FruitSoda(Menu4); // ส่ง Menu ไป Method FFruitSoda และกลับรับค่ามาเก็บที่ MenuInput 4
+                /*menuInput4 = FruitSoda(menu4); // ส่ง Menu ไป Method FFruitSoda และกลับรับค่ามาเก็บที่ MenuInput 4*/
                 break;
             }
             case 5:
             {
-                Menu = "Yogurt";
+                menu = "Yogurt";
                 {
-                    Console.WriteLine("\n" + M_Option[2] + Menu);
-                    Console.Write(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
-                    Console.ReadKey();
-                    Console.Clear();
+                    System.out.println("\n" + M_Option[2] + menu);
+                    System.out.print(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
+                    sc.next();
+                    System.console().flush();
                 }
-                MenuInput5 = Yogurt(Menu5); // ส่ง Menu ไป Method Yogurt และกลับรับค่ามาเก็บที่ MenuInput 5
+                /*menuInput5 = Yogurt(menu5); // ส่ง Menu ไป Method Yogurt และกลับรับค่ามาเก็บที่ MenuInput 5*/
                 break;
             }
             default:
             {
-                Console.WriteLine(M_Option[0]);
-                Console.Write(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
-                Console.ReadKey();
-                Console.Clear();
-
-                Main();
+                System.out.println(M_Option[0]);
+                System.out.print(M_Option[1]); //กดปุ่ม Enter เพื่อดำเนินการต่อ
+                sc.next();
+                System.console().flush();
+                main(M_Option);
                 break;
             }
-        } // รับค่าการเลือกประเภทเครื่องดื่ม*/
+        }
+    }
     private static String GetInput(){
         return sc.nextLine();
     }
