@@ -101,5 +101,7 @@ public class Main {
                 break;
             }
         } // รับค่าการเลือกประเภทเครื่องดื่ม*/
+    private static String GetInput(){
+        return sc.nextLine();
     }
 }
